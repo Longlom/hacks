@@ -1,0 +1,18 @@
+[package]
+name = "dma"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+libc ="0.2"
+winapi = {version = "0.3.9", features = ["winuser"]}
+windows-sys = { version = "0.45.0", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_System_Threading",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_NetworkManagement_NetworkDiagnosticsFramework",
+    "Win32_System_Diagnostics_Debug"
+] }
